@@ -1,0 +1,160 @@
+
+:root {
+    --bg-principal: #fdf9f9;
+    --bg-tarjetas: #ffffff;
+    --color-acento: #f4c2c2;
+    --color-acento-suave: #ffe5e5;
+
+    --texto-oscuro: #2b2b2b;
+    --texto-parrafo: #666666;
+    --boton-oscuro: #1a1a1a;
+
+    --bg-footer: #1a1a1a;
+    --texto-footer: #a3a3a3;
+}
+
+body {
+    background-color: var(--bg-principal);
+    color: var(--texto-parrafo);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,.texto-oscuro {
+    color: var(--texto-oscuro);
+    font-weight: bold;
+}
+
+.titulo-serif {
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+}
+
+.subtitulo-chico {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: #999;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    color: var(--texto-parrafo) !important;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    color: var(--color-acento) !important;
+}
+
+.nav-link.active {
+    background-color: var(--boton-oscuro);
+    color: white !important;
+    border-radius: 20px;
+    padding: 5px 20px !important;
+}
+
+.btn-oscuro {
+    background-color: var(--boton-oscuro);
+    color: white;
+    border-radius: 25px;
+    padding: 10px 25px;
+    border: none;
+}
+
+.btn-oscuro:hover {
+    background-color: var(--color-acento);
+    color: white;
+}
+
+.btn-outline-oscuro {
+    background-color: transparent;
+    color: var(--boton-oscuro);
+    border: 1px solid var(--boton-oscuro);
+    border-radius: 25px;
+    padding: 10px 25px;
+}
+
+.btn-outline-oscuro:hover {
+    background-color: var(--color-acento-suave);
+}
+
+.img-placeholder {
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #adb5bd;
+    object-fit: cover;
+}
+
+.circulo-hero {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    border: 2px dashed #ccc;
+}
+
+.card-custom {
+    background-color: var(--bg-tarjetas);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+}
+
+.form-control,.form-select {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.botones-flotantes {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.btn-whatsapp,.btn-regresar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-whatsapp {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.btn-whatsapp:hover {
+    background-color: #25D366;
+    color: white;
+    transform: translateY(-5px);
+}
+
+.btn-regresar {
+    background-color: var(--bg-tarjetas);
+    color: var(--texto-oscuro);
+    border: 1px solid #dee2e6;
+}
+
+.btn-regresar:hover {
+    background-color:#1a1a1a ;
+    color: rgb(250, 243, 243);
+    border-color: var(--color-acento);
+    transform: translateY(-5px);
+}
